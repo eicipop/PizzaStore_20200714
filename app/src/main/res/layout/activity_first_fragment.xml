@@ -8,7 +8,7 @@
     tools:context=".fragments.FirstFragment">
 
     <ListView
-        android:id="@+id/itemLv"
+        android:id="@+id/pizzaStoreListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

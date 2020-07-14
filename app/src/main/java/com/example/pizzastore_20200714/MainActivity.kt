@@ -15,10 +15,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
         setupEvents()
         setValues()
-        // 미뤄둔 어댑터 객체화를 실행
-        mAdapter = PizzaStoreAdapter(this, R.layout.room_list_item, mRoomList)
-        // 완성된 어댑터를 리스트뷰와 연결
-        roomListView.adapter = mAdapter
+
     }
     override fun setupEvents() {
 

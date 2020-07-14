@@ -5,13 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
 import com.example.pizzastore_20200714.R
 import com.example.pizzastore_20200714.datas.PizzaStore
-import com.example.pizzastore_20200714.fragments.FirstFragment
-import com.example.pizzastore_20200714.fragments.SecondFragment
+
 
 class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<PizzaStore>) :
     ArrayAdapter<PizzaStore>(mContext, resId, mList) {
