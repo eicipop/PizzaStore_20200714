@@ -8,7 +8,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : BaseActivity() {
 
 
-    lateinit var mvpa
+    lateinit var mvpa : MainViewPagerAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,7 +25,7 @@ class MainActivity : BaseActivity() {
         mvpa = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mvpa
 
-        mainTabLayout.setupwithViewPager(mainViewPager)
+        mainTabLayout.setupWithViewPager(mainViewPager)
     }
 
 }
