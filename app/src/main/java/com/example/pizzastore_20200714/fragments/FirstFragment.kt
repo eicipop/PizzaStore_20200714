@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.pizzastore_20200714.R
 import com.example.pizzastore_20200714.adapters.PizzaStoreAdapter
 import com.example.pizzastore_20200714.datas.PizzaStore
 import kotlinx.android.synthetic.main.activity_first_fragment.*
+import kotlinx.android.synthetic.main.activity_list_item.*
 
 class FirstFragment : Fragment() {
     val mPizzaStoreList = ArrayList<PizzaStore>()
@@ -37,5 +39,7 @@ class FirstFragment : Fragment() {
 
         mAdapter = PizzaStoreAdapter(activity!!, R.layout.activity_list_item, mPizzaStoreList)
         pizzaStoreListView.adapter = mAdapter
+
+
     }
 }

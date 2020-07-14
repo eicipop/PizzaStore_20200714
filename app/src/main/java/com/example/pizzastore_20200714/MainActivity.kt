@@ -1,8 +1,10 @@
 package com.example.pizzastore_20200714
 
 import android.os.Bundle
+import com.bumptech.glide.Glide
 import com.example.pizzastore_20200714.adapters.MainViewPagerAdapter
 import com.example.pizzastore_20200714.adapters.PizzaStoreAdapter
+import kotlinx.android.synthetic.main.activity_list_item.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -26,6 +28,8 @@ class MainActivity : BaseActivity() {
         mainViewPager.adapter = mvpa
 
         mainTabLayout.setupWithViewPager(mainViewPager)
+
+
     }
 
 }

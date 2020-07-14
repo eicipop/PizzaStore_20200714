@@ -5,8 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.pizzastore_20200714.R
 import com.example.pizzastore_20200714.datas.PizzaStore
+import kotlinx.android.synthetic.main.activity_list_item.*
 
 
 class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<PizzaStore>) :
@@ -22,6 +26,13 @@ class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<P
             tempRow = inf.inflate(R.layout.activity_list_item, null)
         }
         val row = tempRow!!
+
+        val data = mList[position]
+        val nameTxt = row.findViewById<TextView>(R.id.storeNameText)
+        val logoImg = row.findViewById<ImageView>(R.id.imgUrlImageView)
+
+        nameTxt.text = data.name
+        Glide.with(mContext).load(data.url).into(logoImg)
         return row
     }
 
