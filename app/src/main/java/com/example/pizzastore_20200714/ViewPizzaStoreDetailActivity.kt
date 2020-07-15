@@ -12,16 +12,16 @@ import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import kotlinx.android.synthetic.main.activity_first_fragment.*
 import kotlinx.android.synthetic.main.activity_view_pizza_store_detail.*
-import java.util.jar.Manifest
+import android.Manifest
 
 class ViewPizzaStoreDetailActivity : BaseActivity() {
 
     override fun setupEvents() {
-      /*  callBtn.setOnClickListener {
+        callBtn.setOnClickListener {
 
             val permissionListener = object : PermissionListener {
                 override fun onPermissionGranted() {
-                    val phoneNumTxt = (phoneNumTxt.text.toString()).replace("-", "")
+                    val phoneNumTxt = phoneNumTxt.text.toString()
                     val myUri = Uri.parse("tel:${phoneNumTxt}")
                     val myIntent = Intent(Intent.ACTION_CALL, myUri)
                     startActivity(myIntent)
@@ -36,7 +36,7 @@ class ViewPizzaStoreDetailActivity : BaseActivity() {
                 .setDeniedMessage("설정에서 통화 권한을 허용해줘야 합니다.")
                 .setPermissionListener(permissionListener)
                 .check()
-        }*/
+        }
 
     }
 
