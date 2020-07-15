@@ -18,12 +18,13 @@ class EditNickNameActivity : BaseActivity() {
 
     override fun setupEvents() {
         editNickNameBtn.setOnClickListener {
-        var inputNick = nickNameEdt.text.toString()
+            // 입력한 닉네임을 받아야 들고 돌아감
+            var inputNick = nickNameEdt.text.toString()
+            // 결과로 닉네임 첨부 + OK눌럿다고 명시
             val myIntent = Intent()
-
-            myIntent.putExtra("nickname", inputNick)
+            myIntent.putExtra("nickName", inputNick)
             setResult(Activity.RESULT_OK, myIntent)
-            Toast.makeText(this, inputNick, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, inputNick, Toast.LENGTH_SHORT).show()
 
             finish()
         }

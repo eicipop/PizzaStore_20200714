@@ -13,6 +13,7 @@ import com.example.pizzastore_20200714.R
 import kotlinx.android.synthetic.main.activity_second_fragment.*
 
 class SecondFragment : Fragment() {
+    //닉네임을 가지러 간다고 명시하는 숫자를 담은 변수
     val REQ_FOR_NICKNAME = 1000
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +26,7 @@ class SecondFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         changeNickBtn.setOnClickListener {
+            // 결과를 가지러 이동할 때의 화면 전환
             val resultIntent = Intent(context, EditNickNameActivity::class.java)
             startActivityForResult(resultIntent, REQ_FOR_NICKNAME)
 
