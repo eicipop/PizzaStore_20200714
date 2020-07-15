@@ -34,4 +34,5 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm){
     override fun getCount(): Int {
         return 2
     }
+
 }

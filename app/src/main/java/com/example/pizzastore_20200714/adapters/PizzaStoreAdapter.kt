@@ -10,10 +10,10 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.pizzastore_20200714.R
 import com.example.pizzastore_20200714.datas.PizzaStore
-import kotlinx.android.synthetic.main.activity_list_item.*
+import java.io.Serializable
 
 
-class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<PizzaStore>) :
+class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<PizzaStore>) : Serializable,
     ArrayAdapter<PizzaStore>(mContext, resId, mList) {
     //화면 그려줄 때 사용하는 객체
     val inf = LayoutInflater.from(mContext)
@@ -35,5 +35,6 @@ class PizzaStoreAdapter(val mContext: Context, val resId: Int, val mList: List<P
         Glide.with(mContext).load(data.url).into(logoImg)
         return row
     }
+
 
 }
