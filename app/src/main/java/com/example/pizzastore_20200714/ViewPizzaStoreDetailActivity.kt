@@ -92,6 +92,11 @@ class ViewPizzaStoreDetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_pizza_store_detail)
+
+        var actionBar : androidx.appcompat.app.ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
         setupEvents()
         setValues()
     }

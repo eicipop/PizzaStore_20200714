@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
-    android:padding="15dp"
     tools:context=".ViewPizzaStoreDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -20,112 +19,145 @@
             android:id="@+id/pizzaStoreLogo"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:padding="20dp"
             android:src="@drawable/ic_launcher_background"
-            app:civ_border_color="#000000"
-            app:civ_border_width="2dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="가게이름" />
-
-    <TextView
-        android:id="@+id/pizzaStoreNameTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="피자가게이름"
-        android:textColor="#000000"
-        android:textSize="25sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="대표전화번호" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/phoneNumTxt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:text="전화번호 자리"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/callBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="전화주문" />
-
-        <Button
-            android:id="@+id/messageBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="문자전송" />
+            app:civ_border_color="#dedede"
+            app:civ_border_width="4dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:text="가게이름" />
+
+        <TextView
+            android:id="@+id/pizzaStoreNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="피자가게이름"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layerType="software"
+            android:background="@drawable/dotted_line_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:text="대표전화번호" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="홈페이지" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/phoneNumTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textColor="#000000"
+                android:text="전화번호 자리"
+                android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/callBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화주문" />
 
-        <TextView
-            android:id="@+id/homePageUrl"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="6"
-            android:text="http://www.naver.com"
-            android:textColor="#000000" />
+            <Button
+                android:id="@+id/messageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="문자전송" />
 
-        <Button
-            android:id="@+id/homepageBtn"
-            android:layout_weight="4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="홈페이지가기" />
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="앱스토어 바로가기" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/appStoreUriBtn"
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="홈페이지" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/homePageUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="http://www.naver.com"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/homepageBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="홈페이지가기" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="앱스토어바로가기" />
-    </LinearLayout>
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="앱스토어 바로가기" />
+
+            <Button
+                android:id="@+id/appStoreUriBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="앱스토어바로가기" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.pizzastore_20200714
 
+import android.app.ActionBar
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -21,6 +22,12 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //액션바 숨기기
+        var actionBar : androidx.appcompat.app.ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
         setupEvents()
         setValues()
     }

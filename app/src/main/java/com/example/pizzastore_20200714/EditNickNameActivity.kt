@@ -12,6 +12,10 @@ class EditNickNameActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_nick_name)
 
+        var actionBar : androidx.appcompat.app.ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
         setupEvents()
         setValues()
     }
